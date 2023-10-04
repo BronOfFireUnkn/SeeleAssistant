@@ -41,7 +41,7 @@ from assistance import *
 #脚本主干部分开始#
 
 if (var1 == 1):
-    start_Official()
+    start_Official_1()
     
 award()
 back_to_origin()
