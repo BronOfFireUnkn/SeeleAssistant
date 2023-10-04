@@ -14,7 +14,7 @@
 git clone -b Dev-seele https://github.com/BronOfFireUnkn/SeeleAssistantCode.git
 ```
 ·此脚本基于airtest，需要python≥3.10，最新的airtest不支持3.9及以下版本  
-·安装完毕python后,启动安装依赖文件.bat，会自动创建python虚拟环境，卸载直接删除整个文件夹而不会有残留，然后在config配置文件中修改变量，运行start_android.bat即可,此脚本会自动git pull拉取更新，无需更新选择NO UPDATE即可  
+·安装完毕python后，启动安装依赖文件.bat，会自动创建python虚拟环境，卸载直接删除整个文件夹而不会有残留，然后在config配置文件中修改变量，运行start_android.bat即可,此脚本会自动git pull拉取更新，无需更新选择NO UPDATE即可，需要检查更新有个Update Only.bat  
 ·如果您想参与测试，请在AirtestIDE中（需要下载AirtestIDE）打开test_All.py即可运行
 ## 支持项目
 ### ·未通过稳定性测试
