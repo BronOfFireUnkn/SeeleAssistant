@@ -9,8 +9,16 @@
 ·此脚本本人由于精力有限只对蓝叠国际（蓝叠5） Pie64版本做支持，使用其他模拟器需要改main.py里的adb连接与模拟器启动位置，蓝叠模拟器启动器不管你怎么装启动器都在C盘，故可以直接使用（不用我适配了）  
 ·如果你使用其他模拟器，那么恭喜你，你多半要成为你自己的售后了，接售后，但不完全接
 ## 脚本说明
+安装脚本（克隆仓库）
+```
+git clone -b Dev-seele https://github.com/BronOfFireUnkn/SeeleAssistantCode.git
+```
 ·此脚本基于airtest，需要python≥3.10，最新的airtest不支持3.9及以下版本  
-·安装完毕python后 pip install airtest，在config配置文件中修改变量，运行start_android.bat即可,此脚本会自动git pull拉取更新，无需更新选择NO UPDATE即可  
+·安装完毕python后 
+```
+pip install airtest
+```
+在config配置文件中修改变量，运行start_android.bat即可,此脚本会自动git pull拉取更新，无需更新选择NO UPDATE即可  
 ·如果您想参与测试，请在AirtestIDE中（需要下载AirtestIDE）打开test_All.py即可运行
 ## 支持项目
 ### ·未通过稳定性测试
