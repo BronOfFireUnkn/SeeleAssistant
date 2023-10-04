@@ -1,3 +1,3 @@
-{"tag": "function", "depth": 1, "time": 1696347723.631896, "data": {"name": "stop_app", "call_args": {"package": "com.miHoYo.enterprise.NGHSoD"}, "start_time": 1696347723.532068, "ret": null, "end_time": 1696347723.631896}}
-{"tag": "function", "depth": 1, "time": 1696347723.987516, "data": {"name": "start_app", "call_args": {"package": "com.miHoYo.enterprise.NGHSoD", "activity": null}, "start_time": 1696347723.631896, "ret": null, "end_time": 1696347723.987516}}
-{"tag": "function", "depth": 1, "time": 1696347733.9888608, "data": {"name": "sleep", "call_args": {"secs": 10.0}, "start_time": 1696347723.987516, "ret": null, "end_time": 1696347733.9888608}}
+{"tag": "function", "depth": 1, "time": 1696405786.7165647, "data": {"name": "connect_device", "call_args": {"uri": "android:///"}, "start_time": 1696405785.8266711, "ret": "<Android '127.0.0.1:5555'>", "end_time": 1696405786.7165647}}
+{"tag": "function", "depth": 1, "time": 1696405786.755708, "data": {"name": "stop_app", "call_args": {"package": "com.miHoYo.enterprise.NGHSoD"}, "start_time": 1696405786.7206266, "ret": null, "end_time": 1696405786.755708}}
+{"tag": "function", "depth": 1, "time": 1696405786.921194, "data": {"name": "start_app", "call_args": {"package": "com.miHoYo.enterprise.NGHSoD", "activity": null}, "start_time": 1696405786.755708, "ret": null, "end_time": 1696405786.921194}}
