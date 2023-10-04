@@ -10,7 +10,7 @@
 ·如果你使用其他模拟器，那么恭喜你，你多半要成为你自己的售后了，接售后，但不完全接
 ## 脚本说明
 ·此脚本基于airtest，需要python≥3.10，最新的airtest不支持3.9及以下版本  
-·安装完毕python后 pip install airtest，在config配置文件中修改变量，运行main.py即可  
+·安装完毕python后 pip install airtest，在config配置文件中修改变量，运行start_android.bat即可,此脚本会自动git pull拉取更新，无需更新选择NO UPDATE即可  
 ·如果您想参与测试，请在AirtestIDE中（需要下载AirtestIDE）打开test_All.py即可运行
 ## 支持项目
 ### ·未通过稳定性测试
