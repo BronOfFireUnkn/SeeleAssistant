@@ -14,8 +14,18 @@ def start_Official():
     stop_app("com.miHoYo.enterprise.NGHSoD")
     start_app("com.miHoYo.enterprise.NGHSoD")
     sleep(10.0)
-    wait(Template(r"resources\forstart\Official\resources\forstart\Official\tpl1696321843906.png", record_pos=(-0.456, 0.234), resolution=(1920, 1080)), timeout=60, intervalfunc=update)
+    wait(Template(r"resources\forstart\Official\tpl1696321843906.png", record_pos=(-0.456, 0.234), resolution=(1920, 1080)), timeout=60, intervalfunc=update)
     touch((960,742),times=3)
+    wait(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080)))
+    touch(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080)))
+    wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)),timeout=200)
+    touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+    sleep(1.0)
+    if exists(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080))):
+        touch(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080)))
+        wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)),timeout=200)
+        touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+        touch((612,10), times=20, duration=0.05)
 
 def start_Bilibili():
     start_app("com.miHoYo.bh3.bilibili")

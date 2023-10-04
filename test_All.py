@@ -58,8 +58,18 @@ def start_Official():
     stop_app("com.miHoYo.enterprise.NGHSoD")
     start_app("com.miHoYo.enterprise.NGHSoD")
     sleep(10.0)
-    wait(Template(r"resources\forstart\Official\resources\forstart\Official\tpl1696321843906.png", record_pos=(-0.456, 0.234), resolution=(1920, 1080)), timeout=60, intervalfunc=prerestart)
+    wait(Template(r"resources\forstart\Official\tpl1696321843906.png", record_pos=(-0.456, 0.234), resolution=(1920, 1080)), timeout=60, intervalfunc=update)
     touch((960,742),times=3)
+    wait(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080)))
+    touch(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080)))
+    wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)),timeout=200)
+    touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+    sleep(1.0)
+    if exists(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080))):
+        touch(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080)))
+        wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)),timeout=200)
+        touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+        touch((612,10), times=20, duration=0.05)
 
 def start_Bilibili():
     start_app("com.miHoYo.bh3.bilibili")
@@ -94,7 +104,7 @@ def daily_1():
     touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
 
 #委托接取#
-def commission():
+def commission_receive():
     wait(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
     touch(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
     wait(Template(r"resources\forstart\Official\tpl1696332801053.png", record_pos=(0.336, 0.109), resolution=(1920, 1080)))
@@ -110,6 +120,29 @@ def commission():
             touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
         else:
             break
+
+#完成委托#
+def commission_complete():
+        wait(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
+        touch(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
+        wait(Template(r"resources\forstart\Official\tpl1696332801053.png", record_pos=(0.336, 0.109), resolution=(1920, 1080)))
+        touch((438,544))
+        wait(Template(r"resources\forstart\Official\tpl1696334238858.png", record_pos=(0.124, 0.233), resolution=(1920, 1080)))
+        touch(Template(r"resources\forstart\Official\tpl1696398214962.png", record_pos=(0.369, 0.235), resolution=(1920, 1080)))
+        wait(Template(r"resources\forstart\Official\tpl1696398239402.png", record_pos=(-0.122, -0.192), resolution=(1920, 1080)))
+        touch(Template(r"resources\forstart\Official\tpl1696398249520.png", record_pos=(0.38, 0.243), resolution=(1920, 1080)))
+        wait(Template(r"resources\forstart\Official\tpl1696398272984.png", record_pos=(-0.463, -0.256), resolution=(1920, 1080)))
+        K_Elysia_ice()
+        K_Universal_1()
+        touch(Template(r"resources\forstart\Official\tpl1696398272984.png", record_pos=(-0.463, -0.256), resolution=(1920, 1080)))
+        exists(Template(r"resources\forstart\Official\tpl1696398503595.png", record_pos=(0.021, -0.191), resolution=(1920, 1080)))
+
+
+
+
+
+
+
 
 #家园扫荡#    
 def homeland_1():
@@ -264,11 +297,11 @@ def K_Short():
 def K_long():
     touch((1781,874),duration=1.0)
 def K_Elysia_ice():
-    touch((1781,874),duration=10.0)
+    touch((1781,874),duration=20.0)
 def K_GG_2_1_1():
     touch((1781,874),duration=1.0)    
 def K_Universal_1():
-    touch((1781,874), times=20, duration=0.05)
+    touch((1781,874), times=50, duration=0.05)
     
 #闪避#
 def J():
@@ -348,7 +381,7 @@ daily_1()
 back_to_origin()
 
 if (var2 == 1):
-    commission()
+    commission_receive()
     back()
     back_to_origin()
     
@@ -374,5 +407,8 @@ touch_click()
 
 #脚本主干部分结束#
           
+
+
+
 
 
