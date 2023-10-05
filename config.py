@@ -1,4 +1,12 @@
 #可动变量声明区域开始#
+
+"adb地址，更改为你自己模拟器的adb地址，不会开adb找不到adb就百度，百度也找不着就默认,adb调用airtest核心与根目录的adb，不是你自己的adb，无需单独配置adb环境变量"
+ADB_SERVER_IP = '127.0.0.1'
+ADB_SERVER_PORT = 5555
+
+"模拟器地址/游戏地址，蓝叠模拟器就是在C盘，不是你的安装位置，蓝叠模拟器不用改，其他根据实际情况改"
+Game_Path = 'C:\Program Files\BlueStacks_nxt\HD-Player.exe'
+
 "1=官服 2=B服"
 var1 = 1
 

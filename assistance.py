@@ -8,10 +8,6 @@ from fight import *
 
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
-#启动#
-
-# 函数封装区域开始#
-"看不懂的地方建议不要改"
 #官服启动#
 def start_Official_1():
     stop_app("com.miHoYo.enterprise.NGHSoD")
@@ -29,12 +25,13 @@ def start_Official_fail():
 def start_Official_2():        
         touch((960,742),times=3)
         wait(Template(r"resources\forstart\Official\tpl1696337588915.png", record_pos=(0.17, 0.247), resolution=(1920, 1080)))
-        if exists(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080))):
+        sleep(1.0)
+        if exists(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080))):
             for J in range(1,3):
-                wait(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080)))
-                touch(Template(r"resources\forstart\Official\tpl1696397869093.png", record_pos=(0.053, 0.246), resolution=(1920, 1080)))
-                wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)),timeout=200)
-                touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+                if exists(Template(r"resources\forstart\Official\tpl1696506555622.png", record_pos=(0.444, 0.117), resolution=(1920, 1080))):
+                    touch(Template(r"resources\forstart\Official\tpl1696506555622.png", record_pos=(0.444, 0.117), resolution=(1920, 1080)))
+                wait(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)),timeout=200)
+                touch(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
                 touch((612,10), times=20, duration=0.05)
 #B服启动#
 def start_Bilibili():
@@ -51,6 +48,7 @@ def award():
     touch(Template(r"resources\forstart\Official\tpl1696332426831.png", record_pos=(-0.461, -0.188), resolution=(1920, 1080)))
     wait(Template(r"resources\forstart\Official\tpl1696332519691.png", record_pos=(0.378, -0.188), resolution=(1920, 1080)))
     touch(Template(r"resources\forstart\Official\tpl1696332519691.png", record_pos=(0.378, -0.188), resolution=(1920, 1080)))
+    wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
     touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
 
 #返回#
@@ -105,17 +103,14 @@ def commission_complete():
         exists(Template(r"resources\forstart\Official\tpl1696398503595.png", record_pos=(0.021, -0.191), resolution=(1920, 1080)))
 
 
-
-
-
-
-
-
 #家园扫荡#    
 def homeland_1():
     touch(Template(r"resources\forstart\Official\tpl1696335686551.png", record_pos=(0.305, 0.247), resolution=(1920, 1080)))
-    wait(Template(r"resources\forstart\Official\tpl1696336358457.png", record_pos=(-0.464, 0.245), resolution=(1920, 1080)))
-    touch((1262,1013))
+    wait(Template(r"resources\forstart\Official\tpl1696336358457.png", record_pos=(-0.464, 0.245), resolution=(1920, 1080)),intervalfunc=click_3)
+    sleep(2.0)
+    wait(Template(r"resources\forstart\Official\tpl1696507027925.png", record_pos=(-0.221, -0.173), resolution=(1920, 1080)),intervalfunc=click_3)
+    #测试插入位置
+    #var8 = 3
     wait(Template(r"resources\forstart\Official\tpl1696336442192.png", record_pos=(0.478, 0.002), resolution=(1920, 1080)))
     touch((536,401), times=4, duration=0.05)
     sleep(1.0)
@@ -124,7 +119,7 @@ def homeland_1():
     touch(Template(r"resources\forstart\Official\tpl1696428093851.png", record_pos=(0.09, 0.157), resolution=(1920, 1080)))
     touch((1084,62), times=4, duration=0.05)
     sleep(2.0)
-    touch(Template(r"tpl1696428772276.png", record_pos=(0.182, 0.24), resolution=(1920, 1080)))
+    touch(Template(r"resources\forstart\Official\tpl1696428772276.png", record_pos=(0.182, 0.24), resolution=(1920, 1080)))
     wait(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
     touch((1396,366))
     wait(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
@@ -141,6 +136,8 @@ def homeland_1():
             far_away()
             
 def homeland_2():
+    #测试插入位置
+    #var9 = 4
     wait(Template(r"resources\forstart\Official\tpl1696336358457.png", record_pos=(-0.464, 0.245), resolution=(1920, 1080)))
     touch((1490,1015))
     sleep(4.0)
@@ -287,4 +284,6 @@ def far_away():
     sleep(1.0)
     touch(Template(r"resources\forstart\Official\tpl1696336121221.png", record_pos=(0.364, 0.228), resolution=(1920, 1080)))
     sleep(1.0)
-      
+"家园抽风点确定"
+def click_3():
+    touch((954,884))

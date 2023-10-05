@@ -124,6 +124,8 @@ celerybeat.pid
 .venv
 env/
 /venv
+/Dev-seele
+/__pycache__
 venv/
 ENV/
 env.bak/

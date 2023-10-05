@@ -3,21 +3,25 @@ __author__ = "BronOfFire_无铭"
 
 from airtest.core.api import *
 
+from config import *
+from fight import *
+from assistance import *
+
 import subprocess, os
 
-p = subprocess.Popen([r"C:\Program Files\BlueStacks_nxt\HD-Player.exe"], shell=True)
+p = subprocess.Popen([Game_Path], shell=True)
 
 cmd1 = "taskkill /f /t /im HD-Player.exe" 
 cmd2 = "taskkill /f /t /im BlueStacksServices.exe"
 cmd3 = "taskkill /f /t /im python.exe"
 cmd4 = "adb start-server"
 cmd5 = "adb kill-server"
-cmd6 = "adb connect 127.0.0.1:5555"
+cmd6 = "adb connect " + ADB_SERVER_IP + ":" + str(ADB_SERVER_PORT)
 
 sleep(30.0)
 
-os.system(cmd5)
 os.system(cmd4)
+os.system(cmd5)
 os.system(cmd6)
 
 from airtest.cli.parser import cli_setup
@@ -28,10 +32,6 @@ if not cli_setup():
 
 # script content
 print("start...")
-
-from config import *
-from fight import *
-from assistance import *
 
 # generate html report
 # from airtest.report.report import simple_report
@@ -71,6 +71,7 @@ if (var4 == 1):
     wonder()
     back_to_origin()
     
+award()    
 touch_click()  
 
 #脚本主干部分结束#
