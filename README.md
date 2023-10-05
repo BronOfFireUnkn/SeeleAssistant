@@ -11,7 +11,7 @@
 ## 脚本说明
 安装脚本（克隆仓库）
 ```
-git clone -b Dev-seele https://github.com/BronOfFireUnkn/SeeleAssistantCode.git
+git clone -b Dev-seele https://github.com/BronOfFireUnkn/SeeleAssistantCore.git
 ```
 ·此脚本基于airtest，需要python≥3.10，最新的airtest不支持3.9及以下版本  
 ·安装完毕python后，启动安装依赖文件.bat，会自动创建python虚拟环境，卸载直接删除整个文件夹而不会有残留，然后在config配置文件中修改变量，运行start_android.bat即可,此脚本会自动git pull拉取更新，无需更新选择NO UPDATE即可，需要检查更新有个Update Only.bat  
