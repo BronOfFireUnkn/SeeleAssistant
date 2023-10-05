@@ -6,6 +6,8 @@ ADB_SERVER_PORT = 5555
 
 "模拟器地址/游戏地址，蓝叠模拟器就是在C盘，不是你的安装位置，蓝叠模拟器不用改，其他根据实际情况改"
 Game_Path = 'C:\Program Files\BlueStacks_nxt\HD-Player.exe'
+"不用多开模拟器只用默认安装的模拟器不用管这个变量，多开自己百度启动代码"
+Special_Commandline_Args = '"--instance Pie64"'
 
 "1=官服 2=B服"
 var1 = 1

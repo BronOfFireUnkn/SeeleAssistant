@@ -1,5 +1,7 @@
 @echo off
 
+mkdir log
+
 git pull https://github.com/BronOfFireUnkn/SeeleAssistantCode.git
 
 :: Deactivate the virtual environment

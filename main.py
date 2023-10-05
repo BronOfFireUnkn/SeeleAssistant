@@ -7,9 +7,7 @@ from config import *
 from fight import *
 from assistance import *
 
-import subprocess, os
-
-p = subprocess.Popen([Game_Path], shell=True)
+import subprocess, os, shutil
 
 cmd1 = "taskkill /f /t /im HD-Player.exe" 
 cmd2 = "taskkill /f /t /im BlueStacksServices.exe"
@@ -17,6 +15,18 @@ cmd3 = "taskkill /f /t /im python.exe"
 cmd4 = "adb start-server"
 cmd5 = "adb kill-server"
 cmd6 = "adb connect " + ADB_SERVER_IP + ":" + str(ADB_SERVER_PORT)
+
+directory_path = "log"
+shutil.rmtree(directory_path)
+
+"此选项和config选项中Special_Commandline_Args变量联动，不知道是干啥的就不用管了"
+ChangeToSpecialCommandlineArgs = 0
+
+if (ChangeToSpecialCommandlineArgs == 0):
+    p = subprocess.Popen([Game_Path], shell=True)
+
+elif (ChangeToSpecialCommandlineArgs == 1):
+    p = subprocess.Popen([Game_Path, Special_Commandline_Args], shell=True)
 
 sleep(30.0)
 

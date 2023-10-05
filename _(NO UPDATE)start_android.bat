@@ -1,3 +1,4 @@
+mkdir log
 
 :: Deactivate the virtual environment
 call .\Dev-seele\Scripts\deactivate.bat
