@@ -1,5 +1,3 @@
-mkdir log
-
 :: Deactivate the virtual environment
 call .\Dev-seele\Scripts\deactivate.bat
 
@@ -9,4 +7,4 @@ python .\setup\check_local_modules.py --no_question
 :: Activate the virtual environment
 call .\Dev-seele\Scripts\activate.bat
 
-py main.py
+py .\android\main.py

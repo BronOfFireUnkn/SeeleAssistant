@@ -1,2 +1,4 @@
 airtest
 adbutils
+opencv-python
+pynput
