@@ -33,6 +33,7 @@ git clone -b Dev-seele https://github.com/BronOfFireUnkn/SeeleAssistantCore.git
 |记忆战场扫荡|不支持（Next）|/|/|
 |舰团委托|部分支持（May Not Be）|部分完成，不支持贡献拿奖励|（dev3）|
 |往世乐土（2.25）|搁置|等待主架构稳定性测试完成|/| 
+|戳戳舰娘|支持|完成|dev2（？）连测试都没测试|
 ## 联系作者
 B站私信不看，有问题发邮件  
 B站：[无铭_BronOfFire](https://space.bilibili.com/36254944)  
