@@ -42,6 +42,9 @@ var8 = 3
 
 "家园派遣次数，默认为4，测试期间为了体力安全建议不要动"
 var9 = 4
+
+"是否扫荡记忆战场，默认为1，开启扫荡，0关闭"
+var10 = 1
 #可动变量声明区域结束#
 
 #不可动变量声明区域开始#
@@ -57,6 +60,10 @@ I = 1
 J = 1
 K = 1
 I = 1
+#L已经被定义
+M = 1
+#N已经被定义
+
 #不可动变量声明区域结束#
 
 # 函数封装区域开始#
@@ -87,7 +94,7 @@ def start_Official_2():
                 if exists(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080))):
                     wait(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
                     touch(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
-                    touch((612,10), times=20, duration=0.05)
+                    touch((1902,67), times=20, duration=0.05)
                 else:
                     break
                     
@@ -101,14 +108,44 @@ def update():
     touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
     wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)),timeout=2000)
     touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+#邮件#
+def email():
+    wait(Template(r"resources\forstart\Official\tpl1696656307936.png", record_pos=(-0.426, -0.023), resolution=(1920, 1080)))
+    sleep(1.0)
+    touch(Template(r"resources\forstart\Official\tpl1696656307936.png", record_pos=(-0.426, -0.023), resolution=(1920, 1080)))
+    sleep(1.0)
+    wait(Template(r"resources\forstart\Official\tpl1696656465814.png", record_pos=(0.384, 0.245), resolution=(1920, 1080)))
+    sleep(1.0)
+    touch(Template(r"resources\forstart\Official\tpl1696656465814.png", record_pos=(0.384, 0.245), resolution=(1920, 1080)))
+    if exists(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080))):
+        sleep(1.0)
+        touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+    for M in range(1,4):
+        if exists(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080))):
+            touch(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
+        else:
+            break
 #奖励#
-def award():
+def award_before():
+    wait(Template(r"resources\forstart\Official\tpl1696332426831.png", record_pos=(-0.461, -0.188), resolution=(1920, 1080)))
+    sleep(1.0)
     touch(Template(r"resources\forstart\Official\tpl1696332426831.png", record_pos=(-0.461, -0.188), resolution=(1920, 1080)))
     wait(Template(r"resources\forstart\Official\tpl1696332519691.png", record_pos=(0.378, -0.188), resolution=(1920, 1080)),intervalfunc=click_4)
+    sleep(1.0)
     touch(Template(r"resources\forstart\Official\tpl1696332519691.png", record_pos=(0.378, -0.188), resolution=(1920, 1080)))
+    sleep(1.0)
     wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+    sleep(1.0)
     touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
-
+def award_after():
+    award_before()
+    sleep(1.0)
+    click_5
+    sleep(2.0)
+    touch((611,437), times=4, duration=0.05)
+    sleep(1.0)
+    touch((587,23), times=4, duration=0.05)
+    
 #返回#
 def back_to_origin():
     touch(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
@@ -205,7 +242,7 @@ def homeland_2():
     touch((1564,138), times=60, duration=0.1)
     
     for D in range(var9):
-        touch((1569,128))
+        touch((1569,128), times=4, duration=0.05)
         wait(Template(r"resources\forstart\Official\tpl1696336942629.png", record_pos=(0.442, -0.254), resolution=(1920, 1080)))
         if exists(Template(r"resources\forstart\Official\tpl1696336849145.png", threshold=0.69, rgb=True, record_pos=(0.443, -0.256), resolution=(1920, 1080))):
             C=1
@@ -251,12 +288,32 @@ def community():
         touch((1233,844))
         sleep(2.0)
         touch((946,796))
+    sleep(1.0)
+    back()
+    sleep(1.0)
+    wait(Template(r"resources\forstart\Official\tpl1696655879288.png", record_pos=(0.243, 0.229), resolution=(1920, 1080)))
+    touch(Template(r"resources\forstart\Official\tpl1696655879288.png", record_pos=(0.243, 0.229), resolution=(1920, 1080)))
+    sleep(1.0)
+    wait(Template(r"resources\forstart\Official\tpl1696655950106.png", record_pos=(-0.386, -0.124), resolution=(1920, 1080)))
+    sleep(1.0)
+    if exists(Template(r"resources\forstart\Official\tpl1696656024015.png", record_pos=(-0.441, -0.101), resolution=(1920, 1080))):
+        L = 1
+    else:
+        L = 0
+    
+    if (L == 0):
+        touch((101,275), times=4, duration=0.07)
+        sleep(1.0)
+        touch((519,27), times=4, duration=0.07)
+        
 #万象虚境#
 def wonder():
     wait(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
     touch(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
+    sleep(2.0)
     wait(Template(r"resources\forstart\Official\tpl1696340297559.png", record_pos=(0.136, -0.104), resolution=(1920, 1080)),intervalfunc=click_2)
     touch(Template(r"resources\forstart\Official\tpl1696340297559.png", record_pos=(0.136, -0.104), resolution=(1920, 1080)))
+    sleep(2.0)
     wait(Template(r"resources\forstart\Official\tpl1696340567266.png", record_pos=(-0.344, -0.091), resolution=(1920, 1080)))
     touch(Template(r"resources\forstart\Official\tpl1696340567266.png", record_pos=(-0.344, -0.091), resolution=(1920, 1080)))
     swipe((618,101),(618,943))
@@ -285,6 +342,33 @@ def wonder():
         sleep(15.0)
 
         touch(Template(r"resources\forstart\Official\tpl1696341596658.png", record_pos=(-0.154, 0.202), resolution=(1920, 1080)))
+
+#记忆战场#
+def battlefield():
+    wait(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
+    touch(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
+    sleep(2.0)
+    wait(Template(r"resources\forstart\Official\tpl1696657542633.png", record_pos=(-0.084, -0.027), resolution=(1920, 1080)),intervalfunc=click_2)
+    touch(Template(r"resources\forstart\Official\tpl1696657542633.png", record_pos=(-0.084, -0.027), resolution=(1920, 1080)))
+    if exists(Template(r"resources\forstart\Official\tpl1696657673422.png", record_pos=(0.38, 0.247), resolution=(1920, 1080))):
+        N = 1
+    else:
+        N = 0
+    
+    if (N == 1):
+        sleep(1.0)
+        touch((207,220))
+        sleep(1.0)
+        click_6()
+        sleep(1.0)
+        touch((223,356))
+        sleep(1.0)
+        click_6()
+        sleep(1.0)
+        touch((254,539))
+        sleep(1.0)
+        click_6()
+        sleep(1.0)
 
 #戳四戳#
 def touch_click():
@@ -348,8 +432,13 @@ def click_3():
 "作战任务"
 def click_4():
     touch((168,200))
+"作战奖励"
+def click_5():
+    touch((166,345))
+"记忆战场扫荡"
+def click_6():
+    touch((1386,1021), times=15, duration=0.4)
 ""
-
 #进攻#
 def K_Short():
     touch((1781,874))
@@ -435,42 +524,68 @@ def temp_GG_1():
 if (var1 == 1):
     start_Official_1()
     
-award()
+sleep(1.0)
+email()
+sleep(1.0)
+award_before()
+sleep(1.0)
 back_to_origin()
+sleep(1.0)
 daily_1()
+sleep(1.0)
 back_to_origin()
+sleep(1.0)
 
 if (var2 == 1):
     commission_receive()
+    sleep(1.0)
     back()
+    sleep(1.0)
     back_to_origin()
+    sleep(1.0)
     
 homeland_1()
+sleep(1.0)
 back()
+sleep(1.0)
 homeland_2()
+sleep(1.0)
 
 if (var6 == 0):
     back()
+    sleep(2.0)
     back()
+    sleep(1.0)
 elif (var6 == 1):
     back()
     shopping()
+    sleep(2.0)
     back_to_origin()
+    sleep(1.0)
     
 community()
+sleep(2.0)
 back_to_origin()
+sleep(1.0)
 
 if (var4 == 1):
     wonder()
+    sleep(1.0)
     back_to_origin()
+    sleep(1.0)
     
-award()
+if (var10 == 1):
+    battlefield()
+    sleep(1.0)
+    back_to_origin()
+    sleep(1.0)
+    
+award_after()
+sleep(1.0)
+back_to_origin()
+sleep(1.0)
 touch_click()
 
 #脚本主干部分结束#
           
-
-
-
-
 

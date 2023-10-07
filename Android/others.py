@@ -1,4 +1,4 @@
-from config import *
+from Android.config import *
 
 cmd1 = "taskkill /f /t /im HD-Player.exe" 
 cmd2 = "taskkill /f /t /im BlueStacksServices.exe"

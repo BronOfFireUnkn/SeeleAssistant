@@ -3,12 +3,12 @@ __author__ = "BronOfFire_无铭"
 
 from airtest.core.api import *
 
-from config import *
-from others import *
-from fight_airtest import *
-from assistance_airtest import *
-from fight_opencv import *
-from assistance_opencv import *
+from Android.config import *
+from Android.others import *
+from Android.fight_airtest import *
+from Android.assistance_airtest import *
+from Android.fight_opencv import *
+from Android.assistance_opencv import *
 
 import subprocess, os, shutil
 if os.path.exists("Android/log"):
@@ -45,37 +45,67 @@ print("start...")
 if (var1 == 1):
     start_Official_1()
     
-award()
+sleep(1.0)
+email()
+sleep(1.0)
+award_before()
+sleep(1.0)
 back_to_origin()
+sleep(1.0)
 daily_1()
+sleep(1.0)
 back_to_origin()
+sleep(1.0)
 
 if (var2 == 1):
-    commission()
+    commission_receive()
+    sleep(1.0)
     back()
+    sleep(1.0)
     back_to_origin()
+    sleep(1.0)
     
 homeland_1()
+sleep(1.0)
 back()
+sleep(1.0)
 homeland_2()
+sleep(1.0)
 
 if (var6 == 0):
     back()
+    sleep(2.0)
     back()
+    sleep(1.0)
 elif (var6 == 1):
     back()
     shopping()
+    sleep(2.0)
     back_to_origin()
+    sleep(1.0)
     
 community()
+sleep(2.0)
 back_to_origin()
+sleep(1.0)
 
 if (var4 == 1):
     wonder()
+    sleep(1.0)
     back_to_origin()
+    sleep(1.0)
     
-award()    
-touch_click()  
+if (var10 == 1):
+    battlefield()
+    sleep(1.0)
+    back_to_origin()
+    sleep(1.0)
+    
+award_after()
+sleep(1.0)
+back_to_origin()
+sleep(1.0)
+touch_click()
 
 #脚本主干部分结束#
           

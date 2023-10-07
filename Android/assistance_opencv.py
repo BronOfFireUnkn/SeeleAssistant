@@ -4,4 +4,4 @@ import cv2
 from pynput import *
 
 #引入运行模块#
-from config import *
+from Android.config import *
