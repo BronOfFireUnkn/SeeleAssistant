@@ -5,6 +5,7 @@ from airtest.core.api import *
 from Android.main import *
 from Android.config import *
 from Android.fight_airtest import *
+from Android.others import *
 
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
@@ -227,7 +228,7 @@ def community():
         touch((1233,844))
         sleep(2.0)
         touch((946,796))
-    sleep(1.0)
+    sleep(4.0)
     back()
     sleep(1.0)
     wait(Template(r"resources\forstart\Official\tpl1696655879288.png", record_pos=(0.243, 0.229), resolution=(1920, 1080)))
@@ -268,18 +269,42 @@ def wonder():
         if (var5 == 1):
             for F in range(1,9999):
                 K_Elysia_ice()
-                if assert_not_exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                
+                if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                    O = 0
+                else:
+                    O = 1
+                    
+                if (O == 0):
                     break
 
         elif (var5 == 0):
             for F in range(1,9999):
                 K_Universal_1()
-                if assert_not_exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                    O = 0
+                else:
+                    O = 1
+                    
+                if (O == 0):
                     break
-        sleep(15.0)
+                    
+        sleep(3.0)
         Z()
-        sleep(15.0)
-
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
         touch(Template(r"resources\forstart\Official\tpl1696341596658.png", record_pos=(-0.154, 0.202), resolution=(1920, 1080)))
 
 #记忆战场#
@@ -378,3 +403,153 @@ def click_5():
 def click_6():
     touch((1386,1021), times=15, duration=0.4)
 ""
+#进攻#
+def K_Short():
+    touch((1781,874))
+def K_long():
+    touch((1781,874),duration=1.0)
+def K_Elysia_ice():
+    touch((1781,874),duration=20.0)
+def K_GG_2_1_1():
+    touch((1781,874),duration=1.0)    
+def K_Universal_1():
+    touch((1781,874), times=50, duration=0.05)
+    
+#闪避#
+def J():
+    touch((1514,886))
+    
+#大招#    
+def I():
+    touch((1785,615))
+    
+#武器技#
+def U():
+    touch((1506,656))
+    
+    
+#人偶#
+def O():
+    touch((1334,755))
+    
+#W#
+def W():
+    touch((229,738))   
+def W_long():
+    touch((229,738),duration=1.0)
+    
+#A#
+def A():
+    touch((90,857))
+def A_long():
+    touch((90,857),duration=1.0)   
+#进入#
+def Enter():
+    touch((1674,1009))
+
+#S#
+def S():
+    touch((225,989))
+def S_long():
+    touch((225,989),duration=1.0)
+    
+#D#
+def D():
+    touch((353,857))
+def D_long():
+    touch((353,857),duration=1.0) 
+    
+#Z#
+def Z():
+    touch((262,956))
+
+#助战1#
+def A1():
+    touch((1785,184))
+    
+#助战2#
+def A2():
+    touch((1781,431))
+
+
+#往世乐土第一层#
+def A_GG_2_1_1():
+    touch((90,857),duration=1.0)
+          
+#临时储存#
+def temp_GG_1():
+    swipe((1000,200),(1000,300))
+    touch(Template(r"\resources\GG\Elysia\tpl1696320319649.png", record_pos=(0.043, 0.004), resolution=(1920, 1080)))
+    touch(Template(r"\resources\GG\Elysia\tpl1696320551698.png", record_pos=(0.043, -0.116), resolution=(1920, 1080)))
+    exists(Template(r"\resources\GG\Elysia\tpl1696320672630.png", rgb=False, record_pos=(-0.017, -0.231), resolution=(1920, 1080)))
+
+#脚本主干部分开始#
+
+if (var1 == 1):
+    start_Official_1()
+    
+sleep(1.0)
+email()
+sleep(1.0)
+award_before()
+sleep(1.0)
+back_to_origin()
+sleep(1.0)
+daily_1()
+sleep(1.0)
+back_to_origin()
+sleep(1.0)
+
+if (var2 == 1):
+    commission_receive()
+    sleep(1.0)
+    back()
+    sleep(1.0)
+    back_to_origin()
+    sleep(1.0)
+    
+homeland_1()
+sleep(1.0)
+back()
+sleep(1.0)
+homeland_2()
+sleep(1.0)
+
+if (var6 == 0):
+    back()
+    sleep(2.0)
+    back()
+    sleep(1.0)
+elif (var6 == 1):
+    back()
+    shopping()
+    sleep(2.0)
+    back_to_origin()
+    sleep(1.0)
+    
+community()
+sleep(2.0)
+back_to_origin()
+sleep(1.0)
+
+if (var4 == 1):
+    wonder()
+    sleep(1.0)
+    back_to_origin()
+    sleep(1.0)
+    
+if (var10 == 1):
+    battlefield()
+    sleep(1.0)
+    back_to_origin()
+    sleep(1.0)
+    
+award_after()
+sleep(1.0)
+back_to_origin()
+sleep(1.0)
+touch_click()
+
+#脚本主干部分结束#
+          
+

@@ -35,7 +35,7 @@ var5 = 1
 "商店金币购买，开启将var6调成1，关闭为0"
 "普通晶体核心为变量var7，调整同上"
 var6 = 1
-var7 = 1
+var7 = 0
 
 "远征次数，默认为3，测试期间为了体力安全建议不要动"
 var8 = 3
@@ -63,6 +63,7 @@ I = 1
 #L已经被定义
 M = 1
 #N已经被定义
+#O
 
 #不可动变量声明区域结束#
 
@@ -288,7 +289,7 @@ def community():
         touch((1233,844))
         sleep(2.0)
         touch((946,796))
-    sleep(1.0)
+    sleep(4.0)
     back()
     sleep(1.0)
     wait(Template(r"resources\forstart\Official\tpl1696655879288.png", record_pos=(0.243, 0.229), resolution=(1920, 1080)))
@@ -329,18 +330,42 @@ def wonder():
         if (var5 == 1):
             for F in range(1,9999):
                 K_Elysia_ice()
-                if assert_not_exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                
+                if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                    O = 0
+                else:
+                    O = 1
+                    
+                if (O == 0):
                     break
 
         elif (var5 == 0):
             for F in range(1,9999):
                 K_Universal_1()
-                if assert_not_exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                    O = 0
+                else:
+                    O = 1
+                    
+                if (O == 0):
                     break
-        sleep(15.0)
+                    
+        sleep(3.0)
         Z()
-        sleep(15.0)
-
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
+        sleep(3.0)
+        Z()
         touch(Template(r"resources\forstart\Official\tpl1696341596658.png", record_pos=(-0.154, 0.202), resolution=(1920, 1080)))
 
 #记忆战场#

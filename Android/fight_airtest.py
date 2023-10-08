@@ -5,6 +5,7 @@ from airtest.core.api import *
 from Android.main import *
 from Android.config import *
 from Android.assistance_airtest import *
+from Android.others import *
 
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
