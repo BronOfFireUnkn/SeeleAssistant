@@ -9,6 +9,7 @@ from Android.others import *
 
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
+#官服启动#
 def start_Official_1():
     stop_app("com.miHoYo.enterprise.NGHSoD")
     start_app("com.miHoYo.enterprise.NGHSoD")
@@ -61,7 +62,9 @@ def email():
         sleep(1.0)
         touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
     for M in range(1,4):
+        sleep(2.0)
         if exists(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080))):
+            sleep(1.0)
             touch(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
         else:
             break
@@ -82,6 +85,10 @@ def award_after():
     sleep(1.0)
     click_5
     sleep(2.0)
+    touch((1567,929))
+    if exists(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080))):
+        sleep(1.0)
+        touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
     touch((611,437), times=4, duration=0.05)
     sleep(1.0)
     touch((587,23), times=4, duration=0.05)
@@ -268,8 +275,6 @@ def wonder():
         wait(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080)),timeout=120)
         if (var5 == 1):
             for F in range(1,9999):
-                K_Elysia_ice()
-                
                 if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
                     O = 0
                 else:
@@ -277,10 +282,13 @@ def wonder():
                     
                 if (O == 0):
                     break
+                for P in range(1,2):
+                    if (O == 0):
+                        break
+                    K_Elysia_ice()    
 
         elif (var5 == 0):
             for F in range(1,9999):
-                K_Universal_1()
                 if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
                     O = 0
                 else:
@@ -288,6 +296,10 @@ def wonder():
                     
                 if (O == 0):
                     break
+                for P in range(1,2):
+                    if (O == 0):
+                        break
+                    K_Universal_1()
                     
         sleep(3.0)
         Z()
@@ -306,7 +318,37 @@ def wonder():
         sleep(3.0)
         Z()
         touch(Template(r"resources\forstart\Official\tpl1696341596658.png", record_pos=(-0.154, 0.202), resolution=(1920, 1080)))
+        
+    if(var11 == 1):
+        wait(Template(r"resources\forstart\Official\tpl1696820719662.png", record_pos=(0.083, 0.009), resolution=(1920, 1080)))
+        touch(Template(r"resources\forstart\Official\tpl1696820719662.png", record_pos=(0.083, 0.009), resolution=(1920, 1080)))
+        sleep(1.0)
+        touch(Template(r"resources\forstart\Official\tpl1696820756403.png", record_pos=(0.287, -0.103), resolution=(1920, 1080)))
+        sleep(1.0)
+        touch((1240,586))
+        for Q in range(1,9999):
+            if exists(Template(r"resources\forstart\Official\tpl1696820810619.png", record_pos=(-0.374, -0.103), resolution=(1920, 1080))):
+                R = 1
+                touch((238,348), times=30, duration=0.03)
+                touch(Template(r"resources\forstart\Official\tpl1696820983899.png", record_pos=(0.333, 0.181), resolution=(1920, 1080)))
+                sleep(1.0)
+                touch(Template(r"resources\forstart\Official\tpl1696821033752.png", record_pos=(0.142, 0.148), resolution=(1920, 1080)))
+                sleep(1.0)
+                touch(Template(r"resources\forstart\Official\tpl1696821033752.png", record_pos=(0.142, 0.148), resolution=(1920, 1080)))
 
+            else:
+                R = 0
+                
+            if (R == 0):
+                break
+        touch(Template(r"resources\forstart\Official\tpl1696821100270.png", record_pos=(0.422, -0.205), resolution=(1920, 1080)))
+        sleep(1.0)
+        touch(Template(r"resources\forstart\Official\tpl1696821100270.png", record_pos=(0.422, -0.205), resolution=(1920, 1080)))
+        sleep(1.0)
+        touch(Template(r"resources\forstart\Official\tpl1696821100270.png", record_pos=(0.422, -0.205), resolution=(1920, 1080)))
+        sleep(1.0)
+
+            
 #记忆战场#
 def battlefield():
     wait(Template(r"resources\forstart\Official\tpl1696332763358.png", record_pos=(0.364, -0.159), resolution=(1920, 1080)))
@@ -359,6 +401,16 @@ def shopping():
                 touch(Template(r"resources\forstart\Official\tpl1696346708866.png", record_pos=(0.132, 0.114), resolution=(1920, 1080)))
         else:
             break
+            
+    sleep(1.0)
+    touch((177,870))
+    sleep(1.0)
+    touch((171,760))
+    sleep(1.0)
+    if exists(Template(r"resources\forstart\Official\tpl1696821364534.png", record_pos=(-0.226, 0.064), resolution=(1920, 1080))):
+        sleep(1.0)
+        touchTemplate(r"resources\forstart\Official\tpl1696821364534.png", record_pos=(-0.226, 0.064), resolution=(1920, 1080))
+    
     if (var7 == 1):
         swipe((190,957),(190,190))
         sleep(1.0)
@@ -372,6 +424,25 @@ def shopping():
         sleep(1.0)
         touch((962,847))
         touch((1326,838))
+        
+#购买#
+def weekly_shopping():
+    wait(Template(r"resources\forstart\Official\tpl1696821520097.png", record_pos=(-0.427, 0.089), resolution=(1920, 1080)))
+    touch(Template(r"resources\forstart\Official\tpl1696821520097.png", record_pos=(-0.427, 0.089), resolution=(1920, 1080)))
+    sleep(1.0)
+    wait(Template(r"resources\forstart\Official\tpl1696821568541.png", record_pos=(-0.21, 0.067), resolution=(1920, 1080)))
+    sleep(1.0)
+    touch((198,290))
+    sleep(1.0)
+    touch((186,516))
+    if exists(Template(r"resources\forstart\Official\tpl1696821708834.png", record_pos=(-0.207, 0.039), resolution=(1920, 1080))):
+        sleep(1.0)
+        touch(Template(r"resources\forstart\Official\tpl1696821708834.png", record_pos=(-0.207, 0.039), resolution=(1920, 1080)))
+        sleep(1.0)
+        touch(Template(r"resources\forstart\Official\tpl1696821708834.png", record_pos=(-0.207, 0.039), resolution=(1920, 1080)))
+        wait(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+        touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+    sleep(1.0)    
 
 #杂项#
 "出击按钮"
@@ -403,153 +474,5 @@ def click_5():
 def click_6():
     touch((1386,1021), times=15, duration=0.4)
 ""
-#进攻#
-def K_Short():
-    touch((1781,874))
-def K_long():
-    touch((1781,874),duration=1.0)
-def K_Elysia_ice():
-    touch((1781,874),duration=20.0)
-def K_GG_2_1_1():
-    touch((1781,874),duration=1.0)    
-def K_Universal_1():
-    touch((1781,874), times=50, duration=0.05)
-    
-#闪避#
-def J():
-    touch((1514,886))
-    
-#大招#    
-def I():
-    touch((1785,615))
-    
-#武器技#
-def U():
-    touch((1506,656))
-    
-    
-#人偶#
-def O():
-    touch((1334,755))
-    
-#W#
-def W():
-    touch((229,738))   
-def W_long():
-    touch((229,738),duration=1.0)
-    
-#A#
-def A():
-    touch((90,857))
-def A_long():
-    touch((90,857),duration=1.0)   
-#进入#
-def Enter():
-    touch((1674,1009))
-
-#S#
-def S():
-    touch((225,989))
-def S_long():
-    touch((225,989),duration=1.0)
-    
-#D#
-def D():
-    touch((353,857))
-def D_long():
-    touch((353,857),duration=1.0) 
-    
-#Z#
-def Z():
-    touch((262,956))
-
-#助战1#
-def A1():
-    touch((1785,184))
-    
-#助战2#
-def A2():
-    touch((1781,431))
-
-
-#往世乐土第一层#
-def A_GG_2_1_1():
-    touch((90,857),duration=1.0)
-          
-#临时储存#
-def temp_GG_1():
-    swipe((1000,200),(1000,300))
-    touch(Template(r"\resources\GG\Elysia\tpl1696320319649.png", record_pos=(0.043, 0.004), resolution=(1920, 1080)))
-    touch(Template(r"\resources\GG\Elysia\tpl1696320551698.png", record_pos=(0.043, -0.116), resolution=(1920, 1080)))
-    exists(Template(r"\resources\GG\Elysia\tpl1696320672630.png", rgb=False, record_pos=(-0.017, -0.231), resolution=(1920, 1080)))
-
-#脚本主干部分开始#
-
-if (var1 == 1):
-    start_Official_1()
-    
-sleep(1.0)
-email()
-sleep(1.0)
-award_before()
-sleep(1.0)
-back_to_origin()
-sleep(1.0)
-daily_1()
-sleep(1.0)
-back_to_origin()
-sleep(1.0)
-
-if (var2 == 1):
-    commission_receive()
-    sleep(1.0)
-    back()
-    sleep(1.0)
-    back_to_origin()
-    sleep(1.0)
-    
-homeland_1()
-sleep(1.0)
-back()
-sleep(1.0)
-homeland_2()
-sleep(1.0)
-
-if (var6 == 0):
-    back()
-    sleep(2.0)
-    back()
-    sleep(1.0)
-elif (var6 == 1):
-    back()
-    shopping()
-    sleep(2.0)
-    back_to_origin()
-    sleep(1.0)
-    
-community()
-sleep(2.0)
-back_to_origin()
-sleep(1.0)
-
-if (var4 == 1):
-    wonder()
-    sleep(1.0)
-    back_to_origin()
-    sleep(1.0)
-    
-if (var10 == 1):
-    battlefield()
-    sleep(1.0)
-    back_to_origin()
-    sleep(1.0)
-    
-award_after()
-sleep(1.0)
-back_to_origin()
-sleep(1.0)
-touch_click()
-
-#脚本主干部分结束#
           
 

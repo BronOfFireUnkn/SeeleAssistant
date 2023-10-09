@@ -88,6 +88,8 @@ community()
 sleep(2.0)
 back_to_origin()
 sleep(1.0)
+weekly_shopping()
+sleep(1.0)
 
 if (var4 == 1):
     wonder()
