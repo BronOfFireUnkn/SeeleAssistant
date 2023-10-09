@@ -1,9 +1,9 @@
 # SeeleAssistant 崩坏3/崩坏三全自动托管项目
-子项目SeeleAssistantGUI，SeeleAssistantElysianRealm (屁用没有反正最后都是在这更新的，就是分开看的清楚点)
-不会代码的舟游脚本up下岗再就业了,此脚本仍在测试阶段，维护更新正常进行，支持项目往下滑，模拟器兼容性测试拉到底
-此项目于2023.10.03创立，由于是个人项目发展进度较慢，一个人要熬秃头了（悲），大体路线主干稳定性测试（dev7完成）→做GUI→学OpenCV→Windows支持
-有问题会日更的，没问题就搓炸弹test_All搓出来的低质量炸弹代码已经快600行了（悲）
-从dev9开启添加浅层乐土支持（人物攻击逻辑），选关逻辑恕我没学OpenCV没法做，深层乐土还得搁置 
+子项目SeeleAssistantGUI，SeeleAssistantElysianRealm (屁用没有反正最后都是在这更新的，就是分开看的清楚点)   
+不会代码的舟游脚本up下岗再就业了,此脚本仍在测试阶段，维护更新正常进行，支持项目往下滑，模拟器兼容性测试拉到底  
+此项目于2023.10.03创立，由于是个人项目发展进度较慢，一个人要熬秃头了（悲），大体路线主干稳定性测试（dev7完成）→做GUI→学OpenCV→Windows支持  
+有问题会日更的，没问题就搓炸弹test_All搓出来的低质量炸弹代码已经快600行了（悲）  
+从dev9开启添加浅层乐土支持（人物攻击逻辑），选关逻辑恕我没学OpenCV没法做，深层乐土还得搁置  
 ## 注意事项  
 ·此脚本基于Windows下python的多个子项目，此脚本暂时只对安卓模拟器生效，待稳定后向Windows原生窗口迁移，目前您仍然需要下载安装蓝叠国际蓝叠5（Bluestacks5）Pie-64或者Nougat-64，并在其中安装崩坏3以使用此脚本。  
 ·此脚本本人由于精力有限只对蓝叠国际（蓝叠5） Pie64版本做支持，其他模拟器的使用效果您可以发送邮件告知我，使用其他模拟器需要改/Android/config.py里的adb连接与模拟器启动位置  
@@ -37,6 +37,8 @@ git clone -b Dev-seele https://github.com/BronOfFireUnkn/SeeleAssistantCore.git
 |万象六|Next|专用|/|airtest|
 |万象七|Next|专用|/|airtest|
 |完成任务|Next|弯道超车|/|airtest,opencv,pynput|
+|商城周期礼包|Will Be|/|/|airtest|
+|往世乐土（浅层）|逐步支持|/|dev9|airtest|
 |往世乐土（2.25）|搁置|等待队列|/|airtest,opencv,pynput|
 ## 联系作者
 B站私信不看，有问题发邮件  
