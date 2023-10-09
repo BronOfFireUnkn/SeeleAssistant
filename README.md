@@ -37,7 +37,6 @@ git clone -b Dev-seele https://github.com/BronOfFireUnkn/SeeleAssistantCore.git
 |万象六|Next|专用|/|airtest|
 |万象七|Next|专用|/|airtest|
 |完成任务|Next|弯道超车|/|airtest,opencv,pynput|
-|商城周期礼包|Will Be|/|/|airtest|
 |往世乐土（浅层）|逐步支持|/|dev9|airtest|
 |往世乐土（2.25）|搁置|等待队列|/|airtest,opencv,pynput|
 ## 联系作者
