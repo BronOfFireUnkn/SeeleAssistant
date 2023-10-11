@@ -95,9 +95,19 @@ def award_after():
     
 #返回#
 def back_to_origin():
-    touch(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
+    for S in range(1,9999):
+        sleep(1.0)
+        if exists(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080))):
+            touch(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
+        else:
+            break
 def back():
-    touch(Template(r"resources\forstart\Official\tpl1696333783080.png", record_pos=(-0.456, -0.254), resolution=(1920, 1080)))
+    for T in range(1,9999):
+        sleep(1.0)
+        if exists(Template(r"resources\forstart\Official\tpl1696333783080.png", record_pos=(-0.456, -0.254), resolution=(1920, 1080))):
+            touch(Template(r"resources\forstart\Official\tpl1696333783080.png", record_pos=(-0.456, -0.254), resolution=(1920, 1080)))
+        else:
+            break
 
 #材料#
 def daily_1():
@@ -150,7 +160,8 @@ def homeland_1():
     touch(Template(r"resources\forstart\Official\tpl1696335686551.png", record_pos=(0.305, 0.247), resolution=(1920, 1080)))
     wait(Template(r"resources\forstart\Official\tpl1696336358457.png", record_pos=(-0.464, 0.245), resolution=(1920, 1080)),intervalfunc=click_3)
     sleep(2.0)
-    wait(Template(r"resources\forstart\Official\tpl1696507027925.png", record_pos=(-0.221, -0.173), resolution=(1920, 1080)),intervalfunc=click_3)
+    wait(Template(r"resources\forstart\Official\tpl1696913022897.png", record_pos=(-0.348, -0.17), resolution=(1920, 1080)),intervalfunc=click_3)
+
     #测试插入位置
     #var8 = 3
     wait(Template(r"resources\forstart\Official\tpl1696336442192.png", record_pos=(0.478, 0.002), resolution=(1920, 1080)))
@@ -163,10 +174,27 @@ def homeland_1():
     sleep(2.0)
     touch(Template(r"resources\forstart\Official\tpl1696428772276.png", record_pos=(0.182, 0.24), resolution=(1920, 1080)))
     wait(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
-    touch((1396,366))
-    wait(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
-    touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+    if exists(Template(r"resources\forstart\Official\tpl1697034112204.png", record_pos=(0.238, -0.092), resolution=(1920, 1080))):
+        touch(Template(r"resources\forstart\Official\tpl1697034112204.png", record_pos=(0.238, -0.092), resolution=(1920, 1080)))
+        wait(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+        touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
     sleep(1.0)
+    
+    touch((1688,273))
+    if exists(Template(r"resources\forstart\Official\tpl1697034112204.png", record_pos=(0.238, -0.092), resolution=(1920, 1080))):
+        touch(Template(r"resources\forstart\Official\tpl1697034112204.png", record_pos=(0.238, -0.092), resolution=(1920, 1080)))
+        wait(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+        touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+    sleep(1.0)
+    touch((1688,150))
+    sleep(1.0)
+    if (var13 == 1):
+        sleep(1.0)
+        far_away_2()
+    if (Var12 == 1):
+        sleep(1.0)
+        touch((1677,150))
+        sleep(1.0)
     if (var8 < 5):
         for K in range(var8):
             far_away()
@@ -266,6 +294,11 @@ def wonder():
     swipe((618,101),(618,943))
     sleep(1.0)
     for G in range(1,3):
+        sleep(1.0)
+        if exists(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080))):
+            sleep(1.0)
+            touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+        sleep(1.0)    
         touch(Template(r"resources\forstart\Official\tpl1696340824827.png", record_pos=(-0.128, -0.027), resolution=(1920, 1080)))
         touch(Template(r"resources\forstart\Official\tpl1696340851156.png", record_pos=(0.374, 0.245), resolution=(1920, 1080)))
         sleep(1.0)
@@ -273,12 +306,13 @@ def wonder():
         wait(Template(r"resources\forstart\Official\tpl1696340924007.png", record_pos=(0.377, 0.238), resolution=(1920, 1080)))
         touch(Template(r"resources\forstart\Official\tpl1696340924007.png", record_pos=(0.377, 0.238), resolution=(1920, 1080)))
         wait(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080)),timeout=120)
+        sleep(5.0)
         if (var5 == 1):
             for F in range(1,9999):
                 if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
-                    O = 0
-                else:
                     O = 1
+                else:
+                    O = 0
                     
                 if (O == 0):
                     break
@@ -290,9 +324,9 @@ def wonder():
         elif (var5 == 0):
             for F in range(1,9999):
                 if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
-                    O = 0
-                else:
                     O = 1
+                else:
+                    O = 0
                     
                 if (O == 0):
                     break
@@ -461,18 +495,15 @@ def far_away():
     sleep(1.0)
     touch(Template(r"resources\forstart\Official\tpl1696336121221.png", record_pos=(0.364, 0.228), resolution=(1920, 1080)))
     sleep(1.0)
-"家园抽风点确定"
-def click_3():
-    touch((954,884))
-"作战任务"
-def click_4():
-    touch((168,200))
-"作战奖励"
-def click_5():
-    touch((166,345))
-"记忆战场扫荡"
-def click_6():
-    touch((1386,1021), times=15, duration=0.4)
-""
-          
+def far_away_2():
+    sleep(1.0)
+    touch((1716,290))
+    sleep(1.0)
+    touch(Template(r"resources\forstart\Official\tpl1696998852065.png", threshold=0.8, rgb=True, target_pos=6, record_pos=(-0.087, 0.205), scale_max=1000, resolution=(1920, 1080)))
+    wait(Template(r"resources\forstart\Official\tpl1696336106511.png", record_pos=(0.116, 0.226), resolution=(1920, 1080)))
 
+    touch(Template(r"resources\forstart\Official\tpl1696336106511.png", record_pos=(0.116, 0.226), resolution=(1920, 1080)))
+    sleep(1.0)
+    touch(Template(r"resources\forstart\Official\tpl1696336121221.png", record_pos=(0.364, 0.228), resolution=(1920, 1080)))
+    sleep(1.0)
+    
