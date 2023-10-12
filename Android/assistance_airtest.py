@@ -14,15 +14,28 @@ def start_Official_1():
     stop_app("com.miHoYo.enterprise.NGHSoD")
     start_app("com.miHoYo.enterprise.NGHSoD")
     sleep(10.0)
+    for U in range(1,11):
+        start_Official_1_2()
+        sleep(5.0)
+        if (V == 1):
+            break
+def start_Official_1_2():    
+    if exists(Template(r"resources\forstart\Official\tpl1696321843906.png", record_pos=(-0.456, 0.234), resolution=(1920, 1080))):
+        global V
+        V = 1
+        start_Official_1_1()
+    if exists(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080))):
+        start_Official_fail()
+def start_Official_1_1():
     wait(Template(r"resources\forstart\Official\tpl1696321843906.png", record_pos=(-0.456, 0.234), resolution=(1920, 1080)), timeout=60)
     if exists(Template(r"resources\forstart\Official\tpl1696321843906.png", record_pos=(-0.456, 0.234), resolution=(1920, 1080))):
         start_Official_2()
     else:
         start_Official_fail()
 def start_Official_fail():    
-    if assert_not_exists(Template(r"resources\forstart\Official\tpl1696321843906.png", record_pos=(-0.456, 0.234), resolution=(1920, 1080))):
+    if (V == 0):
         update()
-        start_Official_1
+        
 def start_Official_2():        
         touch((960,742),times=3)
         wait(Template(r"resources\forstart\Official\tpl1696574217584.png", record_pos=(0.303, 0.247), resolution=(1920, 1080)))
@@ -46,8 +59,11 @@ def start_Bilibili():
 #更新#
 def update():
     wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)),timeout=200)
+    sleep(1.0)
     touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
-    wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)),timeout=2000)
+    sleep(20.0)
+    wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)), timeout=2000, interval=2.5)
+    sleep(1.0)
     touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
 #邮件#
 def email():
@@ -191,10 +207,11 @@ def homeland_1():
     if (var13 == 1):
         sleep(1.0)
         far_away_2()
-    if (Var12 == 1):
+    if (var12 == 1):
         sleep(1.0)
         touch((1677,150))
         sleep(1.0)
+        swipe((856,808),(883,382))
     if (var8 < 5):
         for K in range(var8):
             far_away()
@@ -203,6 +220,7 @@ def homeland_1():
         for K in range(1,5):
             far_away()
         for I in range(var8-4):
+            swipe((856,808),(883,100))
             far_away()
             
 def homeland_2():
@@ -499,7 +517,7 @@ def far_away_2():
     sleep(1.0)
     touch((1716,290))
     sleep(1.0)
-    touch(Template(r"resources\forstart\Official\tpl1696998852065.png", threshold=0.8, rgb=True, target_pos=6, record_pos=(-0.087, 0.205), scale_max=1000, resolution=(1920, 1080)))
+    touch(Template(r"resources\forstart\Official\tpl1697108310433.png", threshold=0.85, rgb=True, target_pos=6, record_pos=(-0.096, -0.104), resolution=(1920, 1080)))
     wait(Template(r"resources\forstart\Official\tpl1696336106511.png", record_pos=(0.116, 0.226), resolution=(1920, 1080)))
 
     touch(Template(r"resources\forstart\Official\tpl1696336106511.png", record_pos=(0.116, 0.226), resolution=(1920, 1080)))
@@ -507,3 +525,18 @@ def far_away_2():
     touch(Template(r"resources\forstart\Official\tpl1696336121221.png", record_pos=(0.364, 0.228), resolution=(1920, 1080)))
     sleep(1.0)
     
+
+"家园抽风点确定"
+def click_3():
+    touch((954,884))
+"作战任务"
+def click_4():
+    touch((168,200))
+"作战奖励"
+def click_5():
+    touch((166,345))
+"记忆战场扫荡"
+def click_6():
+    touch((1386,1021), times=15, duration=0.12)
+    touch((985,784), times=15, duration=0.14)
+""
