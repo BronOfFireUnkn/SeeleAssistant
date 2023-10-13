@@ -111,19 +111,12 @@ def award_after():
     
 #返回#
 def back_to_origin():
-    for S in range(1,9999):
-        sleep(1.0)
         if exists(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080))):
             touch(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
-        else:
-            break
+
 def back():
-    for T in range(1,9999):
-        sleep(1.0)
         if exists(Template(r"resources\forstart\Official\tpl1696333783080.png", record_pos=(-0.456, -0.254), resolution=(1920, 1080))):
             touch(Template(r"resources\forstart\Official\tpl1696333783080.png", record_pos=(-0.456, -0.254), resolution=(1920, 1080)))
-        else:
-            break
 
 #材料#
 def daily_1():
@@ -212,6 +205,8 @@ def homeland_1():
         touch((1677,150))
         sleep(1.0)
         swipe((856,808),(883,382))
+        sleep(1.0)
+        
     if (var8 < 5):
         for K in range(var8):
             far_away()
