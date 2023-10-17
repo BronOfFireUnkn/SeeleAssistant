@@ -2,10 +2,10 @@
 from airtest.core.api import *
 
 #引入运行模块#
-from Android.main import *
-from Android.config import *
-from Android.fight_airtest import *
-from Android.others import *
+from main import *
+from config import *
+from fight_airtest import *
+from others import *
 
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
@@ -98,14 +98,23 @@ def award_before():
     touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
 def award_after():
     award_before()
+    sleep(2.0)
+    touch((1821,989))
     sleep(1.0)
-    click_5
+    wait(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+    sleep(1.0)
+    touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
+    click_5()
     sleep(2.0)
     touch((1567,929))
     if exists(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080))):
         sleep(1.0)
         touch(Template(r"resources\forstart\Official\tpl1696333016620.png", record_pos=(-0.001, 0.144), resolution=(1920, 1080)))
     touch((611,437), times=4, duration=0.05)
+    sleep(1.0)
+    touch((587,23), times=4, duration=0.05)
+    sleep(1.0)
+    touch((1324,976))
     sleep(1.0)
     touch((587,23), times=4, duration=0.05)
     
@@ -358,12 +367,6 @@ def wonder():
         Z()
         sleep(3.0)
         Z()
-        sleep(3.0)
-        Z()
-        sleep(3.0)
-        Z()
-        sleep(3.0)
-        Z()
         touch(Template(r"resources\forstart\Official\tpl1696341596658.png", record_pos=(-0.154, 0.202), resolution=(1920, 1080)))
         
     if(var11 == 1):
@@ -388,13 +391,12 @@ def wonder():
                 
             if (R == 0):
                 break
-        touch(Template(r"resources\forstart\Official\tpl1696821100270.png", record_pos=(0.422, -0.205), resolution=(1920, 1080)))
-        sleep(1.0)
-        touch(Template(r"resources\forstart\Official\tpl1696821100270.png", record_pos=(0.422, -0.205), resolution=(1920, 1080)))
-        sleep(1.0)
-        touch(Template(r"resources\forstart\Official\tpl1696821100270.png", record_pos=(0.422, -0.205), resolution=(1920, 1080)))
-        sleep(1.0)
-
+        for T in range(1,9999):
+            sleep(2.0)
+            if exists(Template(r"resources\forstart\Official\tpl1696821100270.png", record_pos=(0.422, -0.205), resolution=(1920, 1080))):
+                touch(Template(r"resources\forstart\Official\tpl1696821100270.png", record_pos=(0.422, -0.205), resolution=(1920, 1080)))
+            else:
+                break
             
 #记忆战场#
 def battlefield():
@@ -456,7 +458,7 @@ def shopping():
     sleep(1.0)
     if exists(Template(r"resources\forstart\Official\tpl1696821364534.png", record_pos=(-0.226, 0.064), resolution=(1920, 1080))):
         sleep(1.0)
-        touchTemplate(r"resources\forstart\Official\tpl1696821364534.png", record_pos=(-0.226, 0.064), resolution=(1920, 1080))
+        touch(Template(r"resources\forstart\Official\tpl1696821364534.png", record_pos=(-0.226, 0.064), resolution=(1920, 1080)))
     
     if (var7 == 1):
         swipe((190,957),(190,190))
@@ -532,6 +534,9 @@ def click_5():
     touch((166,345))
 "记忆战场扫荡"
 def click_6():
-    touch((1386,1021), times=15, duration=0.12)
-    touch((985,784), times=15, duration=0.14)
+    global S
+    S = 1
+    for S in range(1,6):
+        touch((1386,1021), times=15, duration=0.12)
+        touch((985,784), times=15, duration=0.14)
 ""

@@ -1,0 +1,19 @@
+var1_A = "1"
+var2_A = "0"
+var4_A = "1"
+var5_A = "0"
+var6_A = "1"
+var7_A = "0"
+var8_A = "3"
+var9_A = "4"
+var10_A = "1"
+var11_A = "1"
+var12_A = "2"
+var13_A = "1"
+
+ADB_SERVER_IP = '127.0.0.1'
+ADB_SERVER_PORT = '5555'
+Game_Path = 'C:\\Program Files\\BlueStacks_nxt\\HD-Player.exe'
+ChangeToSpecialCommandlineArgs = "0"
+Special_Commandline_Args = '"--instance Pie64"'
+

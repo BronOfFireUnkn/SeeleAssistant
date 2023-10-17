@@ -3,23 +3,23 @@ __author__ = "BronOfFire_无铭"
 
 from airtest.core.api import *
 
-from Android.config import *
-from Android.others import *
-from Android.fight_airtest import *
-from Android.assistance_airtest import *
-from Android.fight_opencv import *
-from Android.assistance_opencv import *
+from config import *
+from others import *
+from fight_airtest import *
+from assistance_airtest import *
+from fight_opencv import *
+from assistance_opencv import *
 
-import subprocess, os, shutil
+import subprocess, os, shutil, shlex
 if os.path.exists("Android/log"):
     shutil.rmtree("Android/log")
 
 if (ChangeToSpecialCommandlineArgs == 0):
-    p = subprocess.Popen([Game_Path], shell=True)
+    p = subprocess.Popen([Simulator_Path], shell=True)
 
 elif (ChangeToSpecialCommandlineArgs == 1):
-    p = subprocess.Popen([Game_Path, Special_Commandline_Args], shell=True)
-
+    p = subprocess.Popen([Simulator_Path, Special_Commandline_Args], shell=True)
+    
 sleep(30.0)
 
 os.system(cmd4)
@@ -45,73 +45,74 @@ print("start...")
 if (var1 == 1):
     start_Official_1()
     
-sleep(1.0)
+sleep(4.0)
 email()
-sleep(1.0)
+sleep(4.0)
 award_before()
-sleep(1.0)
+sleep(4.0)
 back_to_origin()
-sleep(1.0)
+sleep(4.0)
 daily_1()
-sleep(1.0)
+sleep(4.0)
 back_to_origin()
-sleep(1.0)
+sleep(4.0)
 
 if (var2 == 1):
     commission_receive()
-    sleep(1.0)
+    sleep(4.0)
     back()
-    sleep(1.0)
+    sleep(4.0)
     back_to_origin()
-    sleep(1.0)
+    sleep(4.0)
     
 homeland_1()
-sleep(1.0)
+sleep(4.0)
 back()
-sleep(1.0)
+sleep(4.0)
 homeland_2()
-sleep(1.0)
+sleep(4.0)
 
 if (var6 == 0):
     back()
-    sleep(2.0)
+    sleep(5.0)
     back()
-    sleep(1.0)
+    sleep(5.0)
 elif (var6 == 1):
     back()
     shopping()
-    sleep(2.0)
+    sleep(5.0)
     back_to_origin()
-    sleep(1.0)
+    sleep(5.0)
     
 community()
-sleep(2.0)
+sleep(4.0)
 back_to_origin()
-sleep(1.0)
+sleep(4.0)
 weekly_shopping()
-sleep(1.0)
+sleep(4.0)
+back_to_origin()
+sleep(4.0)
 
 if (var4 == 1):
     wonder()
-    sleep(1.0)
+    sleep(5.0)
     back_to_origin()
-    sleep(1.0)
+    sleep(5.0)
     
 if (var10 == 1):
     battlefield()
-    sleep(1.0)
+    sleep(5.0)
     back_to_origin()
-    sleep(1.0)
+    sleep(5.0)
     
 award_after()
-sleep(1.0)
+sleep(4.0)
 back_to_origin()
-sleep(1.0)
+sleep(4.0)
 touch_click()
 
 #脚本主干部分结束#
           
-
 #收尾#         
 os.system(cmd1)
 os.system(cmd2)

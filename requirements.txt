@@ -2,3 +2,6 @@ airtest
 adbutils
 opencv-python
 pynput
+toml
+shutilwhich
+requests

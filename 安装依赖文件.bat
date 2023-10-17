@@ -1,7 +1,9 @@
-python -m venv Dev-seele
+python -m venv venv
 
-call .\Dev-seele\Scripts\deactivate.bat
+call .\venv\Scripts\deactivate.bat
 
-call .\Dev-seele\Scripts\activate.bat
+call .\venv\Scripts\activate.bat
 
 pip install -r requirements.txt  -i https://mirrors.aliyun.com/pypi/simple/
+
+pause

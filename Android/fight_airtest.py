@@ -2,10 +2,10 @@
 from airtest.core.api import *
 
 #引入运行模块#
-from Android.main import *
-from Android.config import *
-from Android.assistance_airtest import *
-from Android.others import *
+from main import *
+from config import *
+from assistance_airtest import *
+from others import *
 
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
