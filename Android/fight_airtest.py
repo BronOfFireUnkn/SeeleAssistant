@@ -7,6 +7,8 @@ from config import *
 from assistance_airtest import *
 from others import *
 
+ST.THRESHOLD = 0.8
+
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
 #进攻#

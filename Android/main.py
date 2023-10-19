@@ -2,6 +2,7 @@
 __author__ = "BronOfFire_无铭"
 
 from airtest.core.api import *
+ST.THRESHOLD = 0.8
 
 from config import *
 from others import *

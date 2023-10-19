@@ -7,6 +7,8 @@ from config import *
 from fight_airtest import *
 from others import *
 
+ST.THRESHOLD = 0.8
+
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
 #官服启动#
@@ -540,3 +542,13 @@ def click_6():
         touch((1386,1021), times=15, duration=0.12)
         touch((985,784), times=15, duration=0.14)
 ""
+def K_Short():
+    touch((1781,874))
+def K_long():
+    touch((1781,874),duration=1.0)
+def K_Elysia_ice():
+    touch((1781,874),duration=10.0)
+def K_GG_2_1_1():
+    touch((1781,874),duration=1.0)    
+def K_Universal_1():
+    touch((1781,874), times=20, duration=0.05) 
