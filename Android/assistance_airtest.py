@@ -42,6 +42,7 @@ def start_Official_2():
         touch((960,742),times=3)
         wait(Template(r"resources\forstart\Official\tpl1696574217584.png", record_pos=(0.303, 0.247), resolution=(1920, 1080)))
         sleep(1.0)
+        wait(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)), intervalfunc=click_7)
         if exists(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080))):
             for J in range(1,5):
                 if exists(Template(r"resources\forstart\Official\tpl1696506555622.png", record_pos=(0.444, 0.117), resolution=(1920, 1080))):
@@ -50,7 +51,7 @@ def start_Official_2():
                 if exists(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080))):
                     wait(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
                     touch(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
-                    touch((1902,67), times=20, duration=0.05)
+                    click_7()
                 else:
                     break
                     
@@ -196,15 +197,27 @@ def homeland_1():
     wait(Template(r"resources\forstart\Official\tpl1696332618146.png", record_pos=(-0.353, -0.254), resolution=(1920, 1080)))
     if exists(Template(r"resources\forstart\Official\tpl1697034112204.png", record_pos=(0.238, -0.092), resolution=(1920, 1080))):
         touch(Template(r"resources\forstart\Official\tpl1697034112204.png", record_pos=(0.238, -0.092), resolution=(1920, 1080)))
-        wait(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
-        touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+        sleep(3.0)
+        if exists(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080))):
+            touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+        else:
+            sleep(1.0)
+            back()
+            sleep(1.0)
+
     sleep(1.0)
     
     touch((1688,273))
     if exists(Template(r"resources\forstart\Official\tpl1697034112204.png", record_pos=(0.238, -0.092), resolution=(1920, 1080))):
         touch(Template(r"resources\forstart\Official\tpl1697034112204.png", record_pos=(0.238, -0.092), resolution=(1920, 1080)))
-        wait(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
-        touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+        sleep(3.0)
+        if exists(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080))):
+            touch(Template(r"resources\forstart\Official\tpl1696335999759.png", record_pos=(-0.001, 0.142), resolution=(1920, 1080)))
+        else:
+            sleep(1.0)
+            back()
+            sleep(1.0)
+            
     sleep(1.0)
     touch((1688,150))
     sleep(1.0)
@@ -541,14 +554,107 @@ def click_6():
     for S in range(1,6):
         touch((1386,1021), times=15, duration=0.12)
         touch((985,784), times=15, duration=0.14)
+"开场"
+def click_7():
+    touch((1902,67), times=20, duration=0.05)
 ""
+#进攻#
 def K_Short():
     touch((1781,874))
 def K_long():
     touch((1781,874),duration=1.0)
 def K_Elysia_ice():
-    touch((1781,874),duration=10.0)
+    touch((1781,874),duration=20.0)
 def K_GG_2_1_1():
     touch((1781,874),duration=1.0)    
 def K_Universal_1():
-    touch((1781,874), times=20, duration=0.05) 
+    touch((1781,874), times=50, duration=0.05)
+def K_Seele_Elysian_Realm_SuLing_2():
+    touch((1781,874), times=20, duration=0.02)
+def K_Seele_Elysian_Realm_SuLing_3():
+    touch((1781,874),duration=5.0)
+def K_Seele_Elysian_Realm_SuLing_1():
+    I_Seele_Elysian_Realm_SuLing()
+    sleep(6.5)
+    K_Seele_Elysian_Realm_SuLing_3()
+    sleep(1.0)
+    K_Seele_Elysian_Realm_SuLing_2()
+    sleep(2.0)
+    K_Seele_Elysian_Realm_SuLing_3()
+    sleep(1.0)
+    K_Seele_Elysian_Realm_SuLing_2()
+    sleep(2.0)
+    K_Seele_Elysian_Realm_SuLing_3()
+    sleep(1.0)
+    K_Seele_Elysian_Realm_SuLing_2()
+    sleep(2.0)
+
+#闪避#
+def J():
+    touch((1514,886))
+    
+#大招#    
+def I():
+    touch((1785,615))
+def I_Seele_Elysian_Realm_SuLing():
+    touch((1785,615), duration=1.0)
+    
+#武器技#
+def U():
+    touch((1506,656))
+    
+    
+#人偶#
+def O():
+    touch((1334,755))
+    
+#W#
+def W():
+    touch((229,738))   
+def W_long():
+    touch((229,738),duration=1.0)
+    
+#A#
+def A():
+    touch((90,857))
+def A_long():
+    touch((90,857),duration=1.0)   
+#进入#
+def Enter():
+    touch((1674,1009))
+
+#S#
+def S():
+    touch((225,989))
+def S_long():
+    touch((225,989),duration=1.0)
+    
+#D#
+def D():
+    touch((353,857))
+def D_long():
+    touch((353,857),duration=1.0) 
+    
+#Z#
+def Z():
+    touch((262,956))
+
+#助战1#
+def A1():
+    touch((1785,184))
+    
+#助战2#
+def A2():
+    touch((1781,431))
+
+
+#往世乐土第一层#
+def A_GG_2_1_1():
+    touch((90,857),duration=1.0)
+          
+#临时储存#
+def temp_GG_1():
+    swipe((1000,200),(1000,300))
+    touch(Template(r"\resources\GG\Elysia\tpl1696320319649.png", record_pos=(0.043, 0.004), resolution=(1920, 1080)))
+    touch(Template(r"\resources\GG\Elysia\tpl1696320551698.png", record_pos=(0.043, -0.116), resolution=(1920, 1080)))
+    exists(Template(r"\resources\GG\Elysia\tpl1696320672630.png", rgb=False, record_pos=(-0.017, -0.231), resolution=(1920, 1080)))
