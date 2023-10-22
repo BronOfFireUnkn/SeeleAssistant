@@ -2,7 +2,6 @@
 __author__ = "BronOfFire_无铭"
 
 from airtest.core.api import *
-ST.THRESHOLD = 0.8
 
 from config import *
 from others import *
@@ -11,7 +10,12 @@ from assistance_airtest import *
 from fight_opencv import *
 from assistance_opencv import *
 
-import subprocess, os, shutil, shlex
+import subprocess
+import os
+import shutil
+from time import sleep
+
+
 if os.path.exists("Android/log"):
     shutil.rmtree("Android/log")
 
@@ -21,7 +25,7 @@ if (ChangeToSpecialCommandlineArgs == 0):
 elif (ChangeToSpecialCommandlineArgs == 1):
     p = subprocess.Popen([Simulator_Path, Special_Commandline_Args], shell=True)
     
-sleep(30.0)
+time.sleep(30.0)
 
 os.system(cmd4)
 os.system(cmd5)
@@ -30,7 +34,7 @@ os.system(cmd6)
 from airtest.cli.parser import cli_setup
 
 if not cli_setup():
-    auto_setup(__file__, logdir=True, devices=["android:///",], project_root="F:/Cache/AirtestIDE/scripts/SeeleAssistantCode")
+    auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5555/",], project_root="F:/Cache/AirtestIDE/scripts/SeeleAssistantCode")
 
 
 # script content

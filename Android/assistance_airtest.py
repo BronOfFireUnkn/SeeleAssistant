@@ -7,8 +7,6 @@ from config import *
 from fight_airtest import *
 from others import *
 
-ST.THRESHOLD = 0.8
-
 # 函数封装区域开始#
 "看不懂的地方建议不要改"
 #官服启动#
@@ -658,78 +656,3 @@ def temp_GG_1():
     touch(Template(r"\resources\GG\Elysia\tpl1696320319649.png", record_pos=(0.043, 0.004), resolution=(1920, 1080)))
     touch(Template(r"\resources\GG\Elysia\tpl1696320551698.png", record_pos=(0.043, -0.116), resolution=(1920, 1080)))
     exists(Template(r"\resources\GG\Elysia\tpl1696320672630.png", rgb=False, record_pos=(-0.017, -0.231), resolution=(1920, 1080)))
-
-#脚本主干部分开始#
-
-if (var1 == 1):
-    start_Official_1()
-    
-sleep(4.0)
-email()
-sleep(4.0)
-award_before()
-sleep(4.0)
-back_to_origin()
-sleep(4.0)
-daily_1()
-sleep(4.0)
-back_to_origin()
-sleep(4.0)
-
-if (var2 == 1):
-    commission_receive()
-    sleep(4.0)
-    back()
-    sleep(4.0)
-    back_to_origin()
-    sleep(4.0)
-    
-homeland_1()
-sleep(4.0)
-back()
-sleep(4.0)
-homeland_2()
-sleep(4.0)
-
-if (var6 == 0):
-    back()
-    sleep(5.0)
-    back()
-    sleep(5.0)
-elif (var6 == 1):
-    back()
-    shopping()
-    sleep(5.0)
-    back_to_origin()
-    sleep(5.0)
-    
-community()
-sleep(4.0)
-back_to_origin()
-sleep(4.0)
-weekly_shopping()
-sleep(4.0)
-back_to_origin()
-sleep(4.0)
-
-if (var4 == 1):
-    wonder()
-    sleep(5.0)
-    back_to_origin()
-    sleep(5.0)
-    
-if (var10 == 1):
-    battlefield()
-    sleep(5.0)
-    back_to_origin()
-    sleep(5.0)
-    
-award_after()
-sleep(4.0)
-back_to_origin()
-sleep(4.0)
-touch_click()
-
-#脚本主干部分结束#
-          
-
