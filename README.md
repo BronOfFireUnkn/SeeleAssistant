@@ -14,7 +14,13 @@ GUI使用了基于MIT开源的项目PyDracula，改动完全遵照MIT开源协�
 ## 联系作者
 B站私信不看，有问题发邮件，或者提交issue（还是建议发邮件，记得把报错截图附上）   
 B站：[无铭_BronOfFire](https://space.bilibili.com/36254944)   
-邮箱：bronoffire_unkn@petalmail.com   
+邮箱：bronoffire_unkn@petalmail.com 
+## 开发人员名单
+|开发人员|备注|维护项目|维护状态|
+|:----:|:----:|:----:|:----:|
+|[BronOfFireUnkn](https://github.com/BronOfFireUnkn)|无铭|主架构|存续|
+|[lincoln-xu](https://github.com/lincoln-xu)|子叶|B服支持、首席测试专员|存续|
+
 ## 模拟器兼容性报告
 ### [蓝叠国际 蓝叠5（Bluestacks5）](https://www.bluestacks.com/download.html)
 |版本|状态|  
