@@ -338,9 +338,11 @@ def wonder():
         touch(Template(r"resources\forstart\Official\tpl1696340851156.png", record_pos=(0.374, 0.245), resolution=(1920, 1080)))
         sleep(1.0)
         touch(Template(r"resources\forstart\Official\tpl1696340883104.png", record_pos=(0.365, 0.242), resolution=(1920, 1080)))
+        sleep(1.0)
         wait(Template(r"resources\forstart\Official\tpl1696340924007.png", record_pos=(0.377, 0.238), resolution=(1920, 1080)))
         touch(Template(r"resources\forstart\Official\tpl1696340924007.png", record_pos=(0.377, 0.238), resolution=(1920, 1080)))
-        wait(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080)),timeout=120)
+        sleep(1.0)
+        start_of_battle()
         sleep(5.0)
         if (var5 == 1):
             for F in range(1,9999):
@@ -555,6 +557,15 @@ def click_6():
 "开场"
 def click_7():
     touch((1902,67), times=20, duration=0.05)
+"进战判定"
+def start_of_battle():
+    for W in range(1,9999):
+        if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+            X = 1
+        else:
+            X = 0
+        if (X == 1):
+            break
 ""
 #进攻#
 def K_Short():

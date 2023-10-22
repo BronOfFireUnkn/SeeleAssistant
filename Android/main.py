@@ -34,7 +34,7 @@ os.system(cmd6)
 from airtest.cli.parser import cli_setup
 
 if not cli_setup():
-    auto_setup(__file__, logdir=True, devices=["android://127.0.0.1:5555/",], project_root="F:/Cache/AirtestIDE/scripts/SeeleAssistantCode")
+    auto_setup(__file__, logdir=True, devices=["android:///",], project_root="F:/Cache/AirtestIDE/scripts/SeeleAssistantCode")
 
 
 # script content
