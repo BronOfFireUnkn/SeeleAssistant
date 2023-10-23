@@ -2,9 +2,11 @@
 不写更新日志了，你只需要知道更新肯定有bug修复就可以了，有时候可能加点功能性更新   
 此项目仍在测试阶段，up主不会编程（所有语言），代码出错望海涵  
 为什么优先支持安卓模拟器而windows项目需要等待迁移，因为windows直接运行你用不了电脑！  
-## 注意事项  
+## 开源项目使用声明  
 GUI使用了基于MIT开源的项目PyDracula，改动完全遵照MIT开源协议进行  
-使用多项开源第三方库，如pyside6,airtest,opencv,pynput  
+使用多项开源第三方库，如pyside6,airtest,opencv,pynput
+## 更新轨迹
+2023.09.30立项，2023.10.03 dev1发布，2023.10.17 版本分支从dev切换到pre-release（GUI投入使用），dev版本总共11个版本  
 ## 脚本说明
 炸弹版本的pre-release.1已经删除，新发布的~.2可以直接用  
 目前您仍然需要下载安装蓝叠国际蓝叠5（Bluestacks5）Pie-64或者Nougat-64，并在其中安装崩坏3以使用此脚本   
@@ -12,7 +14,13 @@ GUI使用了基于MIT开源的项目PyDracula，改动完全遵照MIT开源协�
 ## 联系作者
 B站私信不看，有问题发邮件，或者提交issue（还是建议发邮件，记得把报错截图附上）   
 B站：[无铭_BronOfFire](https://space.bilibili.com/36254944)   
-邮箱：bronoffire_unkn@petalmail.com   
+邮箱：bronoffire_unkn@petalmail.com 
+## 开发人员名单
+|开发人员|备注|维护项目|维护状态|
+|:----:|:----:|:----:|:----:|
+|[BronOfFireUnkn](https://github.com/BronOfFireUnkn)|无铭|主架构|存续|
+|[lincoln-xu](https://github.com/lincoln-xu)|子叶|B服支持、首席测试专员|存续|
+
 ## 模拟器兼容性报告
 ### [蓝叠国际 蓝叠5（Bluestacks5）](https://www.bluestacks.com/download.html)
 |版本|状态|  
