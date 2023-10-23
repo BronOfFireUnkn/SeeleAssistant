@@ -40,18 +40,19 @@ def start_Official_2():
         touch((960,742),times=3)
         wait(Template(r"resources\forstart\Official\tpl1696574217584.png", record_pos=(0.303, 0.247), resolution=(1920, 1080)))
         sleep(1.0)
-        wait(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)), intervalfunc=click_7)
-        if exists(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080))):
-            for J in range(1,5):
-                if exists(Template(r"resources\forstart\Official\tpl1696506555622.png", record_pos=(0.444, 0.117), resolution=(1920, 1080))):
-                    touch(Template(r"resources\forstart\Official\tpl1696506555622.png", record_pos=(0.444, 0.117), resolution=(1920, 1080)))
-                sleep(2.0)    
-                if exists(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080))):
-                    wait(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
-                    touch(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
-                    click_7()
-                else:
-                    break
+        for J in range(1,5):
+            if exists(Template(r"resources\forstart\Official\tpl1696506555622.png", record_pos=(0.444, 0.117), resolution=(1920, 1080))):
+                touch(Template(r"resources\forstart\Official\tpl1696506555622.png", record_pos=(0.444, 0.117), resolution=(1920, 1080)))
+                if exists(Template(r"resources\forstart\Official\tpl1696346708866.png", record_pos=(0.132, 0.114), resolution=(1920, 1080))):
+                    touch(Template(r"resources\forstart\Official\tpl1696346708866.png", record_pos=(0.132, 0.114), resolution=(1920, 1080)))
+            sleep(2.0)
+            click_7()
+            sleep(2.0)    
+            if exists(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080))):
+                wait(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
+                touch(Template(r"resources\forstart\Official\tpl1696506420186.png", record_pos=(0.403, 0.167), resolution=(1920, 1080)))
+            else:
+                break
                     
 #B服启动#
 def start_Bilibili():
@@ -344,33 +345,14 @@ def wonder():
         sleep(1.0)
         start_of_battle()
         sleep(5.0)
-        if (var5 == 1):
-            for F in range(1,9999):
-                if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
-                    O = 1
-                else:
-                    O = 0
-                    
-                if (O == 0):
-                    break
-                for P in range(1,2):
-                    if (O == 0):
-                        break
-                    K_Elysia_ice()    
-
-        elif (var5 == 0):
-            for F in range(1,9999):
-                if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
-                    O = 1
-                else:
-                    O = 0
-                    
-                if (O == 0):
-                    break
-                for P in range(1,2):
-                    if (O == 0):
-                        break
-                    K_Universal_1()
+        for F in range(1,9999):
+            if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
+                O = 1
+            else:
+                O = 0
+            if (O == 0):
+                break
+            K_Universal_1()
                     
         sleep(3.0)
         Z()
@@ -560,6 +542,7 @@ def click_7():
 "进战判定"
 def start_of_battle():
     for W in range(1,9999):
+        sleep(1.5)
         if exists(Template(r"resources\forstart\Official\tpl1696340973424.png", record_pos=(-0.46, -0.256), resolution=(1920, 1080))):
             X = 1
         else:
